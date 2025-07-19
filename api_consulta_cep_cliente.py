@@ -1,14 +1,14 @@
 def consulta_cep(cep, host="https://receitaws.com.br/v1/cep/"):
 
-if '.' in cep
-  cep = cep.replace(".","")
-  print(cep)
+if '.' in  cep 
+   cep = cep.replace(".","")
+   print(cep)
 
  if '/' in cep:
-cep = cep.replace("/","")
+   cep = cep.replace("/","")
 
 if '-' in cep:
-  cep = cep.replace("-","")
+   cep = cep.replace("-","")
 
 
 URL = f"{host}{cep}"
